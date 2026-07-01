@@ -1,0 +1,20 @@
+import { Injectable, inject, signal } from '@angular/core';
+import { AdminService } from '../services/admin.service';
+import type { Order, PaginatedResult } from '../interfaces';
+
+@Injectable({ providedIn: 'root' })
+export class OrdersStore {
+  private adminService = inject(AdminService);
+
+  readonly result  = signal<PaginatedResult<Order> | null>(null);
+  readonly loading = signal(false);
+  readonly error   = signal<string | null>(null);
+
+  load(params?: Parameters<AdminService['getOrders']>[0]) {
+    this.loading.set(true);
+    this.adminService.getOrders(params).subscribe({
+      next: data => { this.result.set(data); this.loading.set(false); },
+      error: err  => { this.error.set(err.message); this.loading.set(false); },
+    });
+  }
+}

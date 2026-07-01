@@ -1,0 +1,39 @@
+
+> balady-admin@0.0.0 start
+> ng serve --host localhost
+
+[33m>[39m Building...
+[32m√[39m Building...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                  [2m | [22m [1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                   [2m | [22m  [36m8.90 kB[39m[2m | [22m
+[32mchunk-7ADRNQNK.js[39m  [2m | [22m[2m-[22m                      [2m | [22m  [36m5.97 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m                 [2m | [22m  [36m3.71 kB[39m[2m | [22m
+[32mchunk-EVSPGG2W.js[39m  [2m | [22m[2m-[22m                      [2m | [22m  [36m1.64 kB[39m[2m | [22m
+[32mchunk-UTWFDWRB.js[39m  [2m | [22m[2m-[22m                      [2m | [22m  [36m1.43 kB[39m[2m | [22m
+[32mchunk-PFBZVHDM.js[39m  [2m | [22m[2m-[22m                      [2m | [22m[36m255 bytes[39m[2m | [22m
+[32mpolyfills.js[39m       [2m | [22m[2mpolyfills[22m              [2m | [22m [36m95 bytes[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m          [2m | [22m [1m22.00 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                  [2m | [22m [1mRaw size[22m
+[32mchunk-D3F4GXC4.js[39m  [2m | [22m[2morders-component[22m       [2m | [22m [36m35.59 kB[39m[2m | [22m
+[32mchunk-Z42HPDOK.js[39m  [2m | [22m[2mproducts-component[22m     [2m | [22m [36m34.57 kB[39m[2m | [22m
+[32mchunk-LDXGWYYJ.js[39m  [2m | [22m[2msupport-component[22m      [2m | [22m [36m26.17 kB[39m[2m | [22m
+[32mchunk-XTICANQ7.js[39m  [2m | [22m[2mcategories-component[22m   [2m | [22m [36m22.40 kB[39m[2m | [22m
+[32mchunk-7HIDZZOT.js[39m  [2m | [22m[2musers-component[22m        [2m | [22m [36m21.83 kB[39m[2m | [22m
+[32mchunk-HHRRSP3O.js[39m  [2m | [22m[2mreviews-component[22m      [2m | [22m [36m20.75 kB[39m[2m | [22m
+[32mchunk-CQAYYJV7.js[39m  [2m | [22m[2mnotifications-component[22m[2m | [22m [36m17.42 kB[39m[2m | [22m
+[32mchunk-PBI4VS3B.js[39m  [2m | [22m[2mdashboard-component[22m    [2m | [22m [36m16.57 kB[39m[2m | [22m
+[32mchunk-6FHTNMEB.js[39m  [2m | [22m[2manalytics-component[22m    [2m | [22m [36m16.06 kB[39m[2m | [22m
+[32mchunk-X5GUU3PB.js[39m  [2m | [22m[2mlayout-component[22m       [2m | [22m [36m10.26 kB[39m[2m | [22m
+[32mchunk-Y2M3KY76.js[39m  [2m | [22m[2mlogin-component[22m        [2m | [22m  [36m9.95 kB[39m[2m | [22m
+[32mchunk-AQKEXJF7.js[39m  [2m | [22m[2msettings-component[22m     [2m | [22m  [36m6.82 kB[39m[2m | [22m
+[32mchunk-TI2ZVY6N.js[39m  [2m | [22m[2m-[22m                      [2m | [22m  [36m3.74 kB[39m[2m | [22m
+[32mchunk-Q37T3V2P.js[39m  [2m | [22m[2m-[22m                      [2m | [22m  [36m3.26 kB[39m[2m | [22m
+
+Application bundle generation complete. [17.223 seconds] - 2026-06-28T23:06:09.913Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+[2m2:06:11 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m

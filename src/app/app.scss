@@ -1,0 +1,28 @@
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+.toast {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: min(26rem, calc(100vw - 2rem));
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.32);
+}
+
+.toast button {
+  border: 0;
+  background: transparent;
+  color: var(--accent-cyan);
+  cursor: pointer;
+}
