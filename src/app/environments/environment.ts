@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  apiUrl: 'http://ecommerceback.runasp.net/api',
-  signalrUrl: 'http://ecommerceback.runasp.net/hubs',
+  apiUrl: 'https://ecommerceback.runasp.net/api',
+  signalrUrl: 'https://ecommerceback.runasp.net/hubs',
 };
