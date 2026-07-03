@@ -14,9 +14,9 @@ type NavItem = {
     <main class="admin-shell page-shell">
       <aside class="sidebar panel">
         <div class="brand">
-          <span class="brand-mark">B</span>
+          <span class="brand-mark">M</span>
           <div>
-            <strong>Balady</strong>
+            <strong>Masr Shop</strong>
             <span>Admin Console</span>
           </div>
         </div>

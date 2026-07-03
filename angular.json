@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "balady-admin": {
+    "masr-shop-admin": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -22,7 +22,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/balady-admin",
+            "outputPath": "dist/masr-shop-admin",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -75,10 +75,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "balady-admin:build:production"
+              "buildTarget": "masr-shop-admin:build:production"
             },
             "development": {
-              "buildTarget": "balady-admin:build:development"
+              "buildTarget": "masr-shop-admin:build:development"
             }
           },
           "defaultConfiguration": "development"
