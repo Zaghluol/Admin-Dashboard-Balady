@@ -98,9 +98,31 @@ Chart.register(...registerables);
     }
 
     @media (max-width: 980px) {
-      .kpi-grid,
+      .kpi-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
       .chart-grid {
         grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .kpi-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .kpi,
+      .chart-card {
+        padding: 0.85rem;
+      }
+
+      .chart-card {
+        min-height: 18rem;
+      }
+
+      canvas {
+        height: 14rem !important;
       }
     }
   `],

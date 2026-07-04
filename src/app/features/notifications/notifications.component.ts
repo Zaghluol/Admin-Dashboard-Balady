@@ -114,8 +114,39 @@ import type { Notification as AdminNotification } from '@core/interfaces/Index';
     }
 
     @media (max-width: 760px) {
+      .header-actions {
+        width: 100%;
+      }
+
+      .header-actions .btn-secondary {
+        flex: 1 1 12rem;
+      }
+
       .notification {
         display: grid;
+      }
+
+      .actions .btn-secondary,
+      .actions .btn-danger {
+        flex: 1 1 9rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .summary,
+      .notification {
+        padding: 0.85rem;
+      }
+
+      .actions,
+      .header-actions {
+        display: grid;
+      }
+
+      .actions .btn-secondary,
+      .actions .btn-danger,
+      .header-actions .btn-secondary {
+        width: 100%;
       }
     }
   `],

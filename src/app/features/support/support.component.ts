@@ -199,6 +199,30 @@ import type { SupportConversation, SupportMessage } from '@core/interfaces/Index
     @media (max-width: 900px) {
       .support-grid {
         grid-template-columns: 1fr;
+        min-height: auto;
+      }
+
+      .conversation-list {
+        max-height: 22rem;
+        overflow-y: auto;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .chat-head,
+      .reply {
+        display: grid;
+        padding: 0.85rem;
+      }
+
+      .message {
+        max-width: 94%;
+      }
+
+      .reply input,
+      .reply .btn-primary,
+      .chat-head .btn-danger {
+        width: 100%;
       }
     }
   `],

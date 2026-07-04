@@ -22,6 +22,7 @@
 html,
 body {
   min-height: 100%;
+  overflow-x: hidden;
   margin: 0;
   background: var(--bg-base);
   color: var(--text-primary);
@@ -139,6 +140,7 @@ textarea {
 
 .data-table {
   width: 100%;
+  min-width: 44rem;
   border-collapse: collapse;
 }
 
@@ -198,4 +200,47 @@ textarea {
 .page-header p {
   margin: 0.25rem 0 0;
   color: var(--text-secondary);
+}
+
+@media (max-width: 900px) {
+  .page-header {
+    display: grid;
+  }
+
+  .page-header h1 {
+    font-size: 1.45rem;
+  }
+}
+
+@media (max-width: 640px) {
+  html,
+  body {
+    font-size: 13px;
+  }
+
+  .panel {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+  }
+
+  .page-header {
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .page-header > button,
+  .page-header .header-actions,
+  .btn-primary,
+  .btn-secondary,
+  .btn-danger,
+  .btn-ghost {
+    width: 100%;
+  }
+
+  .field-inline {
+    grid-template-columns: 1fr;
+  }
+
+  .data-table {
+    min-width: 38rem;
+  }
 }

@@ -156,6 +156,28 @@ import type { Category, CategoryPayload } from '@core/interfaces/Index';
         grid-template-columns: 1fr;
       }
     }
+
+    @media (max-width: 640px) {
+      .toolbar,
+      .category-form {
+        padding: 0.85rem;
+      }
+
+      .form-head,
+      .pagination {
+        display: grid;
+      }
+
+      .row-actions {
+        white-space: normal;
+      }
+
+      .row-actions .btn-secondary,
+      .row-actions .btn-danger,
+      .pagination .btn-secondary {
+        width: 100%;
+      }
+    }
   `],
 })
 export class CategoriesComponent implements OnInit {

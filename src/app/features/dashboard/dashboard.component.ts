@@ -136,6 +136,19 @@ Chart.register(...registerables);
       .chart-grid {
         grid-template-columns: 1fr;
       }
+
+      .stat-card,
+      .chart-card {
+        padding: 0.85rem;
+      }
+
+      .chart-card {
+        min-height: 18rem;
+      }
+
+      canvas {
+        height: 14rem !important;
+      }
     }
   `],
 })

@@ -53,7 +53,7 @@ type NavItem = {
       grid-template-columns: 17rem minmax(0, 1fr);
       gap: 1rem;
       min-height: 100vh;
-      padding: 1rem;
+      padding: clamp(0.75rem, 2vw, 1rem);
     }
 
     .sidebar {
@@ -64,6 +64,7 @@ type NavItem = {
       align-self: start;
       min-height: calc(100vh - 2rem);
       padding: 1rem;
+      min-width: 0;
     }
 
     .brand {
@@ -105,6 +106,8 @@ type NavItem = {
     }
 
     nav a {
+      display: flex;
+      align-items: center;
       min-height: 2.5rem;
       padding: 0.65rem 0.75rem;
       border-radius: 8px;
@@ -134,10 +137,9 @@ type NavItem = {
       padding: 1rem;
     }
 
-    @media (max-width: 760px) {
+    @media (max-width: 980px) {
       .admin-shell {
         grid-template-columns: 1fr;
-        padding: 0.75rem;
       }
 
       .sidebar {
@@ -145,8 +147,40 @@ type NavItem = {
         min-height: auto;
       }
 
+      .brand {
+        justify-content: space-between;
+      }
+
+      nav {
+        grid-template-columns: repeat(5, minmax(7rem, 1fr));
+        overflow-x: auto;
+        padding-bottom: 0.25rem;
+        scrollbar-width: thin;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .admin-shell {
+        gap: 0.75rem;
+        padding: 0.65rem;
+      }
+
+      .sidebar,
+      .topbar {
+        padding: 0.75rem;
+      }
+
       nav {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        overflow-x: visible;
+      }
+
+      .topbar {
+        display: grid;
+      }
+
+      .topbar .btn-primary {
+        width: 100%;
       }
     }
   `],

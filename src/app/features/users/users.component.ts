@@ -166,6 +166,22 @@ import type { AdminUser } from '@core/interfaces/Index';
         grid-template-columns: 1fr;
       }
     }
+
+    @media (max-width: 640px) {
+      .toolbar,
+      .details {
+        padding: 0.85rem;
+      }
+
+      dl div,
+      .pagination {
+        display: grid;
+      }
+
+      .pagination .btn-secondary {
+        width: 100%;
+      }
+    }
   `],
 })
 export class UsersComponent implements OnInit {

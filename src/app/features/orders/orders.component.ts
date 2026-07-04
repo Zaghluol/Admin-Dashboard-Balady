@@ -267,6 +267,24 @@ const STATUSES: Array<OrderStatus | ''> = ['', 'PendingPayment', 'Paid', 'Proces
         grid-template-columns: 1fr;
       }
     }
+
+    @media (max-width: 640px) {
+      .toolbar,
+      .details {
+        padding: 0.85rem;
+      }
+
+      .details-head,
+      .item-row,
+      .history li,
+      .pagination {
+        display: grid;
+      }
+
+      .pagination .btn-secondary {
+        width: 100%;
+      }
+    }
   `],
 })
 export class OrdersComponent implements OnInit {

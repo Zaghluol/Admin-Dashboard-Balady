@@ -136,6 +136,25 @@ import type { Product, Review } from '@core/interfaces/Index';
         grid-template-columns: 1fr;
       }
     }
+
+    @media (max-width: 640px) {
+      .stat,
+      .toolbar {
+        padding: 0.85rem;
+      }
+
+      .comment {
+        max-width: 18rem;
+      }
+
+      .pagination {
+        display: grid;
+      }
+
+      .pagination .btn-secondary {
+        width: 100%;
+      }
+    }
   `],
 })
 export class ReviewsComponent implements OnInit {

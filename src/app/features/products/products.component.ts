@@ -253,6 +253,43 @@ import type { Category, Product, ProductPayload } from '@core/interfaces/Index';
         grid-template-columns: 1fr;
       }
     }
+
+    @media (max-width: 640px) {
+      .toolbar,
+      .product-form {
+        padding: 0.85rem;
+      }
+
+      .form-head,
+      .actions,
+      .pagination {
+        display: grid;
+      }
+
+      .preview {
+        width: min(100%, 12rem);
+        height: auto;
+        aspect-ratio: 1;
+      }
+
+      .product-cell {
+        min-width: 13rem;
+      }
+
+      .product-cell small {
+        max-width: 16rem;
+      }
+
+      .row-actions {
+        white-space: normal;
+      }
+
+      .row-actions .btn-secondary,
+      .row-actions .btn-danger,
+      .pagination .btn-secondary {
+        width: 100%;
+      }
+    }
   `],
 })
 export class ProductsComponent implements OnInit {
