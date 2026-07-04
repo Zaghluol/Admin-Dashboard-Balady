@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "baladydashboard",
+  "compatibility_date": "2026-07-04",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "dist/masr-shop-admin/browser"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
